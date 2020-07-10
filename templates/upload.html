@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content%}
+<form action='' method="POST" enctype="multipart/form-data">
+    <br>
+    <p><strong>This tool allows you to quickly generate some useful insights from a CSV file like -</strong> </p>
+    <ul>
+        <li><p><strong>Type inference</strong>: detect the types of columns in a dataframe.</p></li>
+        <li><p><strong>Essentials</strong>: type, unique values, missing values</p></li>
+        <li><p><strong>Quantile statistics</strong> like minimum value, Q1, median, Q3, maximum, range, interquartile range</p></li>
+        <li><p><strong>Descriptive statistics</strong> like mean, mode, standard deviation, sum, median absolute deviation, coefficient of variation, kurtosis, skewness</p></li>
+        <li><p><strong>Most frequent values</strong></p></li>
+        <li><p><strong>Histograms</strong></p></li>
+        <li><p><strong>Correlations</strong> highlighting of highly correlated variables, Spearman, Pearson and Kendall matrices</p></li>
+        <li><p><strong>Missing values</strong> matrix, count, heatmap and dendrogram of missing values</p></li>
+        <li><p><strong>Duplicate rows</strong> Lists the most occurring duplicate rows</p></li>
+        <li><p><strong>Text analysis</strong> learn about categories (Uppercase, Space), scripts (Latin, Cyrillic) and blocks (ASCII) of text data</p></li>
+        </ul>
+
+    <br>
+    <p>
+        <input type='file' name='file' multiple=''>
+        <input class="btn btn-primary" type='submit' value='Get Report'>
+    </p>
+</form>
+<br>
+
+{% endblock content%}
